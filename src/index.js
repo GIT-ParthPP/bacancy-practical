@@ -8,7 +8,7 @@ hamburger.addEventListener("click", function () {
   menu.classList.toggle("mobile-menu");
 });
 
-const repeat = false;
+const repeat = true;
 const noArrows = false;
 const noBullets = false;
 const container = document.querySelector(".slider-container");
@@ -41,8 +41,8 @@ function initArrows() {
   }
   const leftArrow = document.createElement("a");
   const iLeft = document.createElement("i");
-  iLeft.classList.add("fa-solid");
-  iLeft.classList.add("fa-left-long");
+  iLeft.classList.add("fa-regular");
+  iLeft.classList.add("fa-arrow-left-long");
   leftArrow.classList.add("slider-left");
   leftArrow.appendChild(iLeft);
   leftArrow.addEventListener("click", () => {
@@ -50,8 +50,8 @@ function initArrows() {
   });
   const rightArrow = document.createElement("a");
   const iRight = document.createElement("i");
-  iRight.classList.add("fa-solid");
-  iRight.classList.add("fa-right-long");
+  iRight.classList.add("fa-regular");
+  iRight.classList.add("fa-arrow-right-long");
   rightArrow.classList.add("slider-right");
   rightArrow.appendChild(iRight);
   rightArrow.addEventListener("click", () => {
